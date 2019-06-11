@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/21c9ebf12e.js"></script>
+</head>
+
+<body>
+  <div class="row d-flex justify-content-center mx-0">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="my-3 text-center">Formulario con Bootstrap</h1>
+      <div class="card">
+        <div class="card-header bg-white">
+          <h2>Crear</h2>
+        </div>
+        <div class="card-body">
+          <!-- ------------------------------------------------------------- -->
+          <!-- Formulario -->
+          <!-- ------------------------------------------------------------- -->
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="nivel">Nivel</label>
+                  <input type="text" class="form-control" id="nivel" placeholder="Nivel">
+                </div>
+                <div class="form-group">
+                  <label for="tipo">Tipo</label>
+                  <input type="text" class="form-control" id="tipo" placeholder="Tipo">
+                </div>
+                <div class="form-group">
+                  <label for="grupo">Grupo</label>
+                  <input type="text" class="form-control" id="grupo" placeholder="Grupo">
+                </div>
+                <div class="form-group">
+                  <label for="subGrupo">SubGrupo</label>
+                  <input type="text" class="form-control" id="subGrupo" placeholder="SubGrupo">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label for="url1">Url1</label>
+                  <input type="text" class="form-control" id="url1" placeholder=Url1">
+                </div>
+                <div class="form-group">
+                  <label for="url2">Url2</label>
+                  <input type="text" class="form-control" id="url2" placeholder=Url2">
+                </div>
+                <div class="form-group">
+                  <label for="linkMenu">LinkMenu</label>
+                  <input type="text" class="form-control" id="linkMenu" placeholder="LinkMenu">
+                </div>
+                <div class="form-group">
+                  <label for="funcion">Función</label>
+                  <select class="form-control custom-select" id="funcion">
+                    <option>Funcion 1</option>
+                    <option>Funcion 2</option>
+                    <option>Funcion 3</option>
+                    <option>Funcion 4</option>
+                    <option>Funcion 5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-body d-flex justify-content-end" style="border-top: 1px solid rgba(0,0,0,.125);">
+          <button class="card-link btn btn-outline-info"><i class="fas fa-save"></i> Crear</button>
+        </div>
+      </div>
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Boton abrir formulario -->
+      <!-- ----------------------------------------------------------------- -->
+      <button type="button" class="btn btn-primary btn-lg btn-block my-3" data-toggle="modal" data-target="#modalForm">
+        <i class="fas fa-external-link-square-alt"></i> Abrir modal
+      </button>
+      <!-- ----------------------------------------------------------------- -->
+      <!-- Modal -->
+      <!-- ----------------------------------------------------------------- -->
+      <div class="modal" id="modalForm">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Crear</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="nivel">Nivel</label>
+                      <input type="text" class="form-control" id="nivel" placeholder="Nivel">
+                    </div>
+                    <div class="form-group">
+                      <label for="tipo">Tipo</label>
+                      <input type="text" class="form-control" id="tipo" placeholder="Tipo">
+                    </div>
+                    <div class="form-group">
+                      <label for="grupo">Grupo</label>
+                      <input type="text" class="form-control" id="grupo" placeholder="Grupo">
+                    </div>
+                    <div class="form-group">
+                      <label for="subGrupo">SubGrupo</label>
+                      <input type="text" class="form-control" id="subGrupo" placeholder="SubGrupo">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="url1">Url1</label>
+                      <input type="text" class="form-control" id="url1" placeholder=Url1">
+                    </div>
+                    <div class="form-group">
+                      <label for="url2">Url2</label>
+                      <input type="text" class="form-control" id="url2" placeholder=Url2">
+                    </div>
+                    <div class="form-group">
+                      <label for="linkMenu">LinkMenu</label>
+                      <input type="text" class="form-control" id="linkMenu" placeholder="LinkMenu">
+                    </div>
+                    <div class="form-group">
+                      <label for="funcion">Función</label>
+                      <select class="form-control custom-select" id="funcion">
+                        <option>Funcion 1</option>
+                        <option>Funcion 2</option>
+                        <option>Funcion 3</option>
+                        <option>Funcion 4</option>
+                        <option>Funcion 5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button class="card-link btn btn-outline-info"><i class="fas fa-save"></i> Crear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------------------------------------------------- -->
+  <!-- Javascript -->
+  <!-- --------------------------------------------------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
